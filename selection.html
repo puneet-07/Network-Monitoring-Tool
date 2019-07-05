@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Selection Page</title>
+</head>
+<body>
+<form action="monitoring.php" method="POST">
+    <fieldset>
+        <p style="text-align: center">
+<b>Click the radio button to select anyone packet:</b> <br>
+<br><br>
+    <input type="radio" name="networktype" value="TCP" checked> For TCP<br>
+    <input type="radio" name="networktype" value="UDP"> For UDP<br>
+    <input type="radio" name="networktype" value="ARP"> For ARP<br>
+    <br><br>
+    <br><br>
+    <b>Select any type of packet information:</b>
+  <select name="choice">
+    <option selected="true" disabled="disabled">Select one</option>
+    <option value="Timestamp">Timestamp</option>
+    <option value="Ip version">Ip version</option>
+    <option value="Source Ip">Source Ip Address</option>
+    <option value="Destination Ip">Destination Ip Address</option>
+    <option value="Source Port">Source Port</option>
+    <option value="Source Mac Address">Source Mac Address</option>
+    <option value="Destination Mac Address">Destination Mac Address</option>
+    <option value="Length of Packet">Length of Packet</option>
+  </select>
+  <br><br> </p>
+  <p style="text-align: center">
+  <input type="submit" name="submit" value="CLICK HERE">
+</form>
+</fieldset>
+</body>
+</html>
